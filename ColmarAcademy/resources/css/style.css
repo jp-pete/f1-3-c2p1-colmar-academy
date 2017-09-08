@@ -1,0 +1,471 @@
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    color: #777a7c;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: #0A3B6B;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #0A3B6B;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    color: #0A3B6B;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.3;
+}
+
+.featured-card {
+    background-color: #eee;
+}
+
+.container {
+    width: 60%;
+}
+
+/* Nav Menu and Header Styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    margin: 0 24px;
+}
+
+#logo-lockup {
+    display: flex;
+    align-items: center;
+}
+
+#logo-lockup span {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #0A3B6B;
+    margin-left: 5px;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+#menu a {
+    margin-left: 16px;
+}
+
+#menu a:hover {
+    border-bottom: solid 3px #5FA7EE;
+}
+
+.mobile-icons {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    nav {
+        display: block;
+        margin: 0;
+    }
+    
+    #logo-lockup {
+        display: flex;
+        justify-content: space-around;
+
+        padding-top: 16px;
+    }
+    
+    #logo-lockup span {
+        display: none;
+    }
+    
+    #menu a {
+        display: none;
+    }
+    
+    .mobile-icons {
+        display: inline-block;   
+    }
+}
+
+/* Jumbotron Hero Image */
+
+#jumbotron {
+    display: flex;
+    padding: 32px 0 32px 24px;
+    background-color: #eee;
+}
+
+#hero-img {
+    width: 100%;
+    height: auto;
+}
+
+#learn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    justify-content: center;
+    width: 40%;
+}
+
+#learn span {
+    line-height: 1.3;
+}
+
+#learn a {
+    height: 40px;
+    background-color: #5FA7EE;
+    color: white;
+    border: none;
+    margin-top: 24px;
+    margin-right: 24px;
+    width: 50%;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 38px;
+    transition: box-shadow 200ms linear, background-color 200ms linear;
+}
+
+#learn a:hover {
+    background-color: rgba(95, 167, 238, 0.8);
+    box-shadow: 0 3px 3px #ccc;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    #jumbotron {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    
+    #jumbotron .container {
+        width: 100%;
+    }
+    
+    #learn {
+        width: 100%;
+        margin: 16px
+    }
+    
+    #learn a {
+        width: 100%;
+    }
+}
+
+/* About Section and Sidebar */
+
+#about {
+   padding: 32px 0 32px 24px;
+   display: flex;    
+}
+
+#practicing {
+    width: 100%;
+    height: auto;
+}
+
+
+#quote-attribution {
+    font-style: italic;
+    color: #0A3B6B;
+}
+
+.sidebar {
+    margin-left: 24px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar-border {
+    border-left: solid 1px grey;
+}
+
+.sidecard {
+    width: 100%;
+    display: flex;
+    padding: 16px 0;
+}
+
+.description p {
+    margin: 16px 0;
+}
+
+.description a {
+    color: #5AA6FF;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
+
+.square {
+    width: 35%;
+    padding: 17.5% 0;
+    height: auto;
+    margin: 0 16px;
+}
+
+.description {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#firstcard {
+    padding-top: 0;
+}
+
+#orientation {
+    background-image: url(../images/information-orientation.jpg);
+    background-size: cover;
+}
+
+#campus {
+    background-image: url(../images/information-campus.jpg);
+    background-size: cover;
+}
+
+#guest {
+    background-image: url(../images/information-guest-lecture.jpg);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    #about {
+        padding: 0;
+    }
+    
+    #quote {
+        display: none;
+    }
+    
+    #sidebar-border {
+        width: 100%;
+        border: none;
+        margin: 16px;
+    }
+    
+    .sidecard {
+        padding: 0;
+        flex-direction: column;
+        margin: 16px 0;
+    }
+    
+    .square {
+        margin: 0;
+    }
+    
+    .description {
+        width: auto;
+        padding: 0 16px;
+        margin-top: 16px
+    }
+    
+    .description a {
+        margin-bottom: 16px;
+    }
+    
+    #orientation {
+        background-image: url(../images/information-orientation-mobile.jpg);
+        background-size: cover;
+        width: auto
+    }
+
+    #campus {
+        background-image: url(../images/information-campus-mobile.jpg);
+        background-size: cover;
+        width: auto;
+    }
+
+    #guest {
+        background-image: url(../images/information-guest-lecture-mobile.jpg);
+        background-size: cover;
+        width: auto;
+    }
+    
+    
+}
+
+/* Course Catalog Section */
+
+#classes h2 {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.cardcontainer {
+    margin: 32px 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.major-card {
+    max-width: 31.5%;
+    margin-bottom: 32px;
+    box-shadow: 2px 2px 2px #eee;
+    transition: box-shadow 250ms 100ms linear;
+}
+
+.major-card img {
+    width: 100%;
+}
+
+.major-card h3 {
+    margin: 16px 16px 8px 16px;
+}
+
+.major-card span {
+    margin: 0 16px;
+}
+
+.major-card p {
+    margin: 8px 16px 24px 16px;
+    line-height: 1.2;
+}
+
+.major-card:hover {
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+@media only screen and (max-width: 768px) {
+    .cardcontainer {
+        margin: 32px 24px;
+    }
+    
+    .major-card {
+        max-width: 48%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .cardcontainer {
+        flex-direction: column;
+        margin: 32px 16px;
+    }
+    
+    .major-card {
+        max-width: none;
+        margin-bottom: 8px;
+        background-color: #eee; 
+    }
+    
+    .major-card img {
+        display: none;
+    }
+    
+    .major-card h3 {
+        margin: 16px 16px 16px 16px;   
+    }
+    
+    .major-card span {
+        display: none;
+    }
+    
+    .major-card p {
+        display: none;
+    }
+}
+
+/* Thesis Section */
+
+#thesis h2 {
+    text-align: center;
+    margin: 32px 0;
+}
+
+#wrapper {
+    display: flex;
+    margin-left: 24px;
+}
+
+video {
+    max-width: 100%;
+}
+
+.container h3 {
+    margin: 24px 0 8px 0;
+}
+
+#fisma {
+    background-image: url(../images/thesis-fisma.jpg);
+}
+
+#now {
+    background-image: url(../images/thesis-now-and-then.jpg);
+}
+
+@media only screen and (max-width: 480px) {
+    
+    #wrapper {
+        margin: 0;
+    }
+    
+    #thesis .container {
+        width: auto;
+    }
+    
+    #thesis-video h3 {
+        display: none;
+    }
+    
+    #thesis-video p {
+        display: none;
+    }
+    
+    #thesis .sidebar {
+        display: none;
+    }
+}
+
+/* Footer Section */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    padding: 16px 24px;
+    border-top: solid 1px gray;
+}
+
+#footer-links span {
+    margin-left: 16px;
+}
+
+#footer-links span:hover {
+    border-bottom: solid 3px #5FA7EE;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    #footer-links {
+        display: none;
+    }
+}
